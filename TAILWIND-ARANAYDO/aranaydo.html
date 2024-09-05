@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/logo.jpg">
+    <title>KP Gadgets</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="overflow-x-hidden font-sans m-0">
+    
+    <nav class="fixed bg-black bg-opacity-70 top-0 w-full z-50">
+        <div class="flex container mx-auto justify-between items-center py-5 px-15">
+            <ul class="flex ml-12 space-x-8 text-white font-bold">
+                <li><a id="home" href="#home-1" class="px-6 py-2 hover:bg-white hover:bg-opacity-30 rounded">Home</a></li>
+                <li><a id="products" href="#products-1" class="px-6 py-2 hover:bg-white hover:bg-opacity-30 rounded">Products</a></li>
+                <li><a id="faq" href="#location-1" class="px-6 py-2 hover:bg-white hover:bg-opacity-30 rounded">Visit Us</a></li>
+                <li><a id="about" href="#contact-1" class="px-3 py-2 hover:bg-white hover:bg-opacity-30 rounded">Contact</a></li>
+            </ul>
+            <div class="search-container flex items-center space-x-4 mr-20 ">
+                <input type="text" id="search-input" placeholder="Search..." class="p-2 text-sm border border-gray-300 rounded-lg">
+                <button onclick="search()" class="p-1 px-3 bg-green-500 text-white rounded-md hover:bg-green-600">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home-1" class="flex items-center justify-center text-white h-screen">
+        <div class="flex items-start p-5">
+            <img src="img/logo.png" alt="KP Gadgets Logo" class="max-w-lg h-auto mx-auto mr-48">
+            <div class="max-w-xl">
+                <div class="mt-24">
+                    <p class="text-gray-500 text-2xl text-justify text-3xl">Discover the best in mobile technology at <span class="text-red-600 font-bold">Bohol’s No.1 Apple Shop</span>. Whether you’re looking for the latest iPhones, accessories, or expert advice, KP Gadgets has you covered.</p>
+                    <h2 class="text-gray-500 italic pt-12 text-2xl font-bold">Visit us today and experience top-notch service and unbeatable products.</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products-1" class="mt-16 py-20 px-24 text-justify">
+        <div class="text-gray-900">
+            <h2 class="mb-12 font-bold">We proudly present a curated selection of Apple products that epitomize innovation, quality, and excellence. Our gallery stands as a testament to our commitment to offering the finest in mobile technology, featuring an array of cutting-edge Apple devices designed to enhance every aspect of your digital life.</h2>
+        </div>
+        <div class="relative max-w-lg mx-auto overflow-hidden rounded-2xl">
+            <div class="flex transition-transform duration-500">
+                <div class="min-w-full box-border"><img src="img/products/1.jpg" alt="Image 1" class="w-full h-auto object-cover rounded-lg"></div>
+                <div class="min-w-full box-border"><img src="img/products/2.jpg" alt="Image 2" class="w-full h-auto object-cover rounded-lg"></div>
+                <div class="min-w-full box-border"><img src="img/products/3.jpg" alt="Image 3" class="w-full h-auto object-cover rounded-lg"></div>
+                <div class="min-w-full box-border"><img src="img/products/4.jpg" alt="Image 4" class="w-full h-auto object-cover rounded-lg"></div>
+                <div class="min-w-full box-border"><img src="img/products/5.jpg" alt="Image 5" class="w-full h-auto object-cover rounded-lg"></div>
+                <div class="min-w-full box-border"><img src="img/products/6.jpg" alt="Image 6" class="w-full h-auto object-cover rounded-lg"></div>
+            </div>
+            <!-- <button class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full z-10 hover:bg-opacity-80">&#10094;</button>
+            <button class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full z-10 hover:bg-opacity-80">&#10095;</button> -->
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location-1" class="flex justify-center items-center py-20 px-24">
+        <div class="mt-24">    
+            <div class="space-y-5 text-gray-900">
+                    <div class="text-left">
+                        <h1 class="font-bold text-3xl space-x-100">TALIBON, BOHOL</h1>
+                    </div>
+                    <div class="text-left">
+                        <p>2nd Floor <span class="text-red-600 font-bold">Alturas</span></p>
+                    </div>
+                </div>
+                <div class="block justify-start space-y-5 text-gray-900 mt-12">
+                    <div class="text-left">
+                        <h1 class="font-bold text-3xl">TAGBILARAN, BOHOL</h1>
+                    </div>
+                    <div class="text-left"> 
+                        <p>2nd floor <span class="text-red-600 font-bold">Alturas Mall</span><br> 4th floor <span class="text-red-600 font-bold">BQ Mall</span><br><span class="text-red-600 font-bold">City Square</span><br><span class="text-red-600 font-bold">Luiton Building</span><br><span class="text-red-600 font-bold">Corner H Grup</span></p>
+                    </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact-1" class="flex items-center justify-center text-white h-screen">
+            <div class="max-w-xl">
+                <div class=" mt-24">
+                    <div class="flex  text-3xl">
+                        <h1 class="text-gray-500 mr-5">Phone:</h1>
+                        <span class="text-red-600 font-bold"> 0915 732 0438</span>
+                    </div>
+                    <div class="flex text-3xl">
+                        <h1 class="text-gray-500 mr-5">Email:</h1>
+                        <span class="text-red-600 font-bold text-3xl">ip.kp.gadgets@gmail.com</span></p>
+                    </div>
+                    <div>
+                        <h1 class="text-gray-500 italic font-bold  text-2xl pt-12">Visit us today and experience top-notch service and unbeatable products.</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- <script>
+        const slides = document.querySelectorAll('.carousel-slide');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            if (index >= slides.length) {
+                currentIndex = 0;
+            } else if (index < 0) {
+                currentIndex = slides.length - 1;
+            } else {
+                currentIndex = index;
+            }
+
+            const offset = -currentIndex * 100;
+            document.querySelector('.carousel-container').style.transform = `translateX(${offset}%)`;
+        }
+
+        prevBtn.addEventListener('click', () => {
+            showSlide(currentIndex - 1);
+        });
+
+        nextBtn.addEventListener('click', () => {
+            showSlide(currentIndex + 1);
+        });
+    </script> -->
+</body>
+
+</html>
